@@ -6,6 +6,8 @@ class WelcomController < ApplicationController
 
   end
 
-  def params
+  def about_params
+    @color = params[:color]
+    @size = params[:shoe_size]
   end
 end
