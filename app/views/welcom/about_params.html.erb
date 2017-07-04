@@ -13,3 +13,8 @@
 <%else%>
   <h3>I have an average size foot!</h3>
   <% end %>
+ 
+  <%= link_to "Blue", params_path(color: "blue"), class: "btn btn-primary" %>
+  <%= link_to "Red", params_path(color: "red"), class: "btn btn-danger" %>
+
+ <h3><%= link_to 'Index', index_path, class: 'navbar-brand' %></h3>

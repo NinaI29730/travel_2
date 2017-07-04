@@ -1,8 +1,4 @@
-<style>
-  body {
-    background: <%= @color %>;
-  }
-  </style>
+
 <h1>Welcom#index</h1>
 <p>Find me in app/views/welcom/index.html.erb</p>
 
@@ -14,12 +10,11 @@
 </ul>
 
   <%= @travel_pictures.each do |picture|%>
-  <ul><%= image_tag picture, alt: "Costa Rica", 
-                                 id: "Costa Rica",
-                                 class: "Country",
-                                 height: 300,
-                                 width: 400,
-                                 style: 'border-bottom: 25px' %></ul>
+  <ul><%= image_tag picture,  height: 300,
+                          width: 400,
+                          style: 'border-bottom: 30px', 
+                          class: "img-responsive" %></ul>
   <% end %>
 
 
+<h3><%= link_to 'Params', params_path, class: 'navbar-brand' %>
