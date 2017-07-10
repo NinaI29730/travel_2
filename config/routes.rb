@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :destinations
   root 'welcom#index'
 
   get 'index' => 'welcom#index'
